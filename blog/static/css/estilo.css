@@ -1,0 +1,324 @@
+/*
+
+     Estilo do website Montanhes
+     Desenvolvedor : Conceicao Lourenco
+     Ano : 2015
+ */
+
+a {
+  text-decoration: none;
+  font-size : 20px;
+  color : #696969;
+}
+/* hover - quando o mouse passar em cima da tag */
+a:hover {
+  text-decoration: none;
+}
+
+/* para trabalhar com ID usar o hastag */
+ #content {
+  width: 1128px;
+  max-width: 1128px;
+  margin: 0 auto;
+  /*background-color:#5F9EA0;*/
+ }
+
+ .header{
+  width: 100%;
+  height: 250px;
+  /*background-color: #906;*/
+}
+
+ /* para trabalhar com class usr o ponto */
+.logo {
+  /*background: url("../img/logo_montanhes.jpg");
+  border: dashed 1px #fff ; */
+  margin: 5px 2px 5px 2px; /*top rigth bottom left*/
+  float: left;
+}
+
+.logo img {
+  width: 380px;
+  height: 240px;
+  max-width: 380px;
+  max-height: 240px;
+  /*border: 1px dashed #696969;*/
+}
+
+.menu {
+   width: 680px; /*dividir a medida desejada pela medida do content*/
+   float: right;
+}
+
+.menu ul {
+	margin-left : 50px;
+  margin-top: 10px;
+  /*background-color: #bebebe*/
+}
+
+.menu li {
+	display : inline;
+	margin-left: 35px;
+}
+
+.menu li a {
+font-size: 1.2em;
+}
+
+/*--------------------------------- */
+/*      Carrinho de compras                            */
+/*--------------------------------- */
+.carrinho a:hover{
+  text-decoration: none;
+}
+
+.carrinho img {
+   width: 40px;
+   height: 35px;
+}
+
+.carrinho span {
+  display: inline;
+  /*border: dashed 1px blue;*/
+  margin: 10px 5px 5px 10px;
+
+}
+
+/*-----------------------------------*/
+/*       BUSCA DO SITE PROF          */
+/*-----------------------------------*/
+.busca {
+  -webkit-border-radius: 15px; /* Chrome, Safari, Opera */
+  -moz-border-radius: 25px; /* mozilla */
+  -ms-border-radius: 15px; /* IE 9 */
+  border:1px solid #d8d8d8;
+  max-width: 35.46099290780142% ; /* 400 / 1128 */
+  height:45px;
+  margin:40px  25px 0px 200px; /*top  rigth bottom left*/
+  display:inline-table;
+  padding:0;
+  }
+
+#inp_busca{ /* input da busca*/
+  float:left;
+  width:390px;
+  padding:7px 0 7px 10px;
+  margin:5px;
+  border:0;
+  background:#FFC;
+  color:#666666;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  line-height: 15px;
+  font-weight: normal;
+  font-variant: normal;
+}
+
+#btn_busca {
+  margin:-35px 15px 5px 5px; /*top botton rigth  left*/
+  float:right;
+  padding:0;
+  border:0;
+  width:35px;
+  height:35px;
+}
+
+/*-----------------------------------*/
+/*-----------------------------------*/
+.menu_p {
+   width: 100%; /*dividir a medida desejada pela medida do content*/
+   padding: 5px;
+   /*background:  #696969 ; #5F9EA0; ../img/cordas_laco.png*/
+   background: rgba(0,0,0,0.6);
+   border: 1px solid rgba(0,0,0,0.4);
+}
+
+
+.menu_p ul {
+  margin-left : 150px;
+}
+
+.menu_p li {
+  display : inline;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+.menu_p li a {
+  color: #FFF;
+  font-size: 1.2em;
+}
+
+.menu_p li a:hover {
+  color: #bebebe;
+  /*text-decoration: underline; */
+}
+.banner {
+  width: 100%; /*dividir a medida desejada pela medida do content*/
+   padding: 5px;
+   background-color: #FFF;
+
+}
+
+.banner img {
+   float: right;
+   width: 100%;
+   border: 1px solid rgba(0,0,0,0.4);
+}
+
+.caixa {
+  width: 30.553191489362%; /* 60.553% equivale 264px / 1128px */
+  padding: 2.4em 4em 2.4em 4em;
+  margin-left: 1.8em;
+  position: absolute;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  margin-top: 40px;
+}
+
+.caixa a {
+   color: #fff;
+}
+
+
+.principal {
+  width: 100%; /*dividir a medida desejada pela medida do content*/
+  padding: 5px;
+  /*background-color: #bebebe;*/
+}
+.lateral {
+ float: left;
+ width: 17.73049645390071%;
+ height: 730px;
+ background: #FFF; /*rgba(0,0,0,0.5);*/
+ border: 1px dashed rgba(0,0,0,0.6);
+ margin: 15px 0px 15px 0px;
+ padding: 5px 30px;
+}
+
+.lateral p {
+  margin-left: 20px;
+}
+
+.coluna {
+  /*dividir a medida desejada pela medida do content*/
+  /*
+   265px / 1128px = 23.49290780141844%
+   200px / 1128px =17.73049645390071%
+  */
+  width: 17.73049645390071%; /* */
+  float: left;
+  padding: 2px;
+  margin-left: 3.10283687943262% ; /* 35 / 1128px = 3.10283687943262%*/
+  margin-right: 3.10283687943262% ;
+
+}
+.coluna img {
+  width: 200px;
+}
+
+.coluna p {
+   font-size: 1.2em;
+}
+.coluna p.preco {
+  color : red;
+  font-size: 1.5em;
+}
+
+.coluna:last-child {
+    margin-right: 0;
+}
+
+.rodape {
+  width: 100%;
+  height: 120px;
+  background: rgba(0,0,0,0.6);
+  clear: both;
+}
+
+.rodape h3 {
+  margin: 85px 30px 5px 0px;
+  color: #bebebe;
+  float: right;
+
+}
+
+/* ------------------------------------------------------------------*/
+
+/*                  TRATAMENTO DA MODAL DE LOGIN                    */
+
+/* ------------------------------------------------------------------*/
+
+.modalDialog {
+position: fixed;
+font-family: Arial, Helvetica, sans-serif;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background: rgba(0,0,0,0.5);
+z-index: 99999;
+opacity:0;
+-webkit-transition: opacity 400ms ease-in;
+-moz-transition: opacity 400ms ease-in;
+transition: opacity 400ms ease-in;
+pointer-events: none;
+overflow:scroll; /* activa scroll da página se a modal for muito comprida */
+}
+
+ .modalDialog:target {
+opacity:1;
+pointer-events: auto;
+}
+
+.modalDialog > div {
+width: 500px;
+position: relative;
+margin: 15% auto;
+padding: 5px 20px 13px 20px;
+border-radius: 10px;
+background: #fff;
+background: -moz-linear-gradient(#fff, #999);
+background: -webkit-linear-gradient(#fff, #999);
+background: -o-linear-gradient(#fff, #999);
+
+-moz-box-shadow: 1px 1px 30px #000;
+-webkit-box-shadow: 1px 1px 30px #000;
+box-shadow: 1px 1px 30px #000;
+}
+
+ .close {
+background: #606061;
+color: #FFFFFF;
+line-height: 25px;
+position: absolute;
+right: -12px;
+text-align: center;
+top: -10px;
+width: 24px;
+text-decoration: none;
+font-weight: bold;
+-webkit-border-radius: 12px;
+-moz-border-radius: 12px;
+border-radius: 12px;
+-moz-box-shadow: 1px 1px 3px #000;
+-webkit-box-shadow: 1px 1px 3px #000;
+box-shadow: 1px 1px 3px #000;
+}
+
+.close:hover { background: #00d9ff; }
+
+.modalpic {
+float: left;
+padding: 6px;
+width: 300px;
+display: block;
+border: 4px solid #ffffff;
+border-radius: 30%;
+box-shadow: 3px 6px 8px 1px rgba(0, 0, 0, 0.3);
+-moz-box-shadow: 3px 6px 8px 1px rgba(0, 0, 0, 0.3);
+-webkit-box-shadow: 3px 6px 8px 1px rgba(0, 0, 0, 0.3);
+margin-right: 100%;
+margin-bottom: 20px;
+}

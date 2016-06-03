@@ -1,0 +1,201 @@
+{% load staticfiles %}
+<html>
+  <head>
+    <meta charset="utf8">
+     <title>  Estuda Menino </title>
+
+     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+
+     <link rel="stylesheet" type="text/css"
+      href="{% static 'css/estilo.css' %}">
+
+   </head>
+   <body>
+      <div id="content" class="content">
+        <!-- INICIO Cabecalho do site -->
+         <div class="header">
+
+              <div class="logo">
+                    <img src="{% static 'imgs/logo.jpg' %}" />
+               </div>
+
+                <div class="menu">
+                   <ul>
+                       <li>
+                       	  <a href="#">
+                               Disciplinas
+                       	   </a>
+                       </li>
+                       <li>
+                         <a href="#">
+                           Aula do dia
+                         </a>
+                       </li>
+                       <li>
+                       	   <a href="#abrirModal">
+                               Minha Conta
+                       	   </a>
+                       	</li>
+                       <!-- Carinho de compras -->
+                       <li class="carrinho">
+                         <a href="#">
+                            <img src="{% static 'imgs/carrinho.png' %}" />
+                            <span> 0 pontos </span>
+                         </a>
+
+                       </li>
+                   <!-- Carinho de compras -->
+                   </ul>
+
+                </div>
+
+            <!-- INICIO DA BUSCA DO SITE -->
+            <div class="busca">
+                <!-- FORMULARIO DE BUSCA  -->
+                 <form method="get" action="mailto:conceicaolourenzo@gmail.com" >
+
+                      <input type="text"
+                             id="inp_busca"
+                             name="val_busca"
+                             placeholder="O que está procurando ?"
+                             maxlength="40" />
+
+                      <input type="image"
+                             src="{% static 'imgs/lupa.png' %}"
+                             value="Go"
+                             id="btn_busca"
+                             class="btn">
+
+
+                  </form>
+               <!-- FORMULARIO DE BUSCA  -->
+            </div>
+             <!-- FIM DA BUSCA DO SITE -->
+
+          </div>
+        <!-- FIM Cabecalho do site -->
+        <div class="menu_p">
+           <ul>
+              <li>
+                <a href="#"> Home </a>
+              </li>
+              <li>
+                <a href="#"> Assuntos Gerais </a>
+              </li>
+              <li>
+                <a href="#"> Forum </a>
+              </li>
+              <li>
+                <a href="#"> Melhores Alunos </a>
+              </li>
+           </ul>
+        </div>
+        <!-- FIM MENU P  -->
+
+        <!-- INICIO BANNER  -->
+         <div class="banner">
+            <div class="caixa">
+              <h2>Melhor Desempenho : começe aqui !</h2>
+              <p>Experimente a mudança de vida, por sua saúde vale tudo. <br />
+                Produtos de qualidade sempre.</p>
+              <a href="#">Leia depoimentos</a>
+            </div>
+
+             <img src="{% static 'imgs/student.jpg' %}" />
+         </div>
+          <!-- FIM BANNER  -->
+
+          <!-- COLUNA DE PRODUTOS   -->
+          <section class="principal">
+
+              <div class="lateral">
+                <h2>Assuntos Gerais </h2>
+                <p class=""> Política </p>
+                <p class=""> Tecnologia </p>
+                <p class=""> Saúde </p>
+
+                <h2>Portugues </h2>
+                <p class=""> Resenhas </p>
+                <p class=""> Conjunção Verbial </p>
+                <p class=""> Redação </p>
+                <p class=""> Pronomes </p>
+
+                <h2>Matemática </h2>
+                <p class=""> Analise Combinatória </p>
+                <p class=""> Fração </p>
+                <p class=""> Porcentagem </p>
+                <p class=""> Geometria </p>
+
+              </div>
+
+              <div class="coluna">
+                <!--figure class="foto"><img src="img/kit_moto.jpg"></figure-->
+                <h2>Meu post aqui </h2>
+                <p class="preco"> publicado pelo aluno 1 </p>
+              </div>
+
+              <div class="coluna">
+                <!--figure class="foto"><img src="img/kit_moto.jpg"></figure-->
+                <h2>Meu post aqui </h2>
+                <p class="preco"> publicado pelo aluno 1 </p>
+              </div>
+
+              <div class="coluna">
+                <!--figure class="foto"><img src="img/kit_moto.jpg"></figure-->
+                <h2>Meu post aqui </h2>
+                <p class="preco"> publicado pelo aluno 1 </p>
+              </div>
+
+              <div class="coluna">
+                <!--figure class="foto"><img src="img/kit_moto.jpg"></figure-->
+                <h2>Meu post aqui </h2>
+                <p class="preco"> publicado pelo aluno 1 </p>
+              </div>
+
+              <div class="coluna">
+                <!--figure class="foto"><img src="img/kit_moto.jpg"></figure-->
+                <h2>Meu post aqui </h2>
+                <p class="preco"> publicado pelo aluno 1 </p>
+              </div>
+
+              <div class="coluna">
+                <!--figure class="foto"><img src="img/kit_moto.jpg"></figure-->
+                <h2>Meu post aqui </h2>
+                <p class="preco"> publicado pelo aluno 1 </p>
+              </div>
+
+         </section>
+         <!-- COLUNA DE PRODUTOS   -->
+
+        <div id="abrirModal" class="modalDialog">
+            <div>
+
+              <a class="close" title="Fechar" href="#close">X</a>
+              <h2>Acessar Minha Conta </h2>
+
+              <form action="javascript:void(0);" method="POST">
+
+                <fieldset>
+
+                  <p><label for="email">E-mail</label></p>
+                  <p><input type="email" id="email" value="mail@address.com" onBlur="if(this.value=='')this.value='mail@address.com'" onFocus="if(this.value=='mail@address.com')this.value=''"></p> <!-- JS because of IE support; better: placeholder="mail@address.com" -->
+
+                  <p><label for="password">Senha</label></p>
+                  <p><input type="password" id="password" value="password" onBlur="if(this.value=='')this.value='password'" onFocus="if(this.value=='password')this.value=''"></p> <!-- JS because of IE support; better: placeholder="password" -->
+
+                  <p><input type="submit" value="Acessar"></p>
+                  <p><input type="button" value="ainda não possuo conta"></p>
+                </fieldset>
+
+              </form>
+
+
+            </div>
+          </div>
+        <div class="rodape">
+           <h3> Desenvolvido por @Conceição Lourenço </h3>
+        </div>
+  </div>
+</body>
+</html>
